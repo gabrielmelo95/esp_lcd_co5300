@@ -26,7 +26,7 @@ Alternatively, you can create `idf_component.yml`. More is in [Espressif's docum
 
 ```c
     ESP_LOGI(TAG, "Initialize QSPI bus");
-    const esp_lcd_panel_io_spi_config_t io_config = CO5300_PANEL_BUS_QSPI_CONFIG(EXAMPLE_PIN_NUM_LCD_PCLK,
+    const spi_bus_config_t buscfg = CO5300_PANEL_BUS_QSPI_CONFIG(EXAMPLE_PIN_NUM_LCD_PCLK,
                                                                                  EXAMPLE_PIN_NUM_LCD_DATA0,
                                                                                  EXAMPLE_PIN_NUM_LCD_DATA1,
                                                                                  EXAMPLE_PIN_NUM_LCD_DATA2,
